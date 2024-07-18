@@ -22,6 +22,8 @@ body{
   margin: 3rem auto;
   width: 80%;
   border-radius: 3px;
+  
+  border: 2px solid black;
 }
 /*shared style end*/
 
@@ -105,7 +107,6 @@ ul li , li a{
 .hero-image{
   width: 350px;
   position: relative;
-  border: 2px solid black;
 }
 
 .hero-image img{
