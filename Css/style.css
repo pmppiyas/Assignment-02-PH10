@@ -184,24 +184,25 @@ font-size: 2rem;
 .run-extra {
   margin-top: 100px;
   display: grid;
-  grid-template-columns: 500px 350px;
+  grid-template-columns: 500px 450px;
   justify-content: space-between;
   align-items: center;
   color: var(--font-color);
-  padding: 30px;
 }
 .run-extra .extra-content{
 text-align: left;
 }
 .run-img{
-  padding: 20px;
   overflow: hidden;
   background-position:  center;
-  border-radius: 20px;
+  border-radius: 15px;
+  width: 85%;
+  margin: 0 auto;
 }
 .run-img img{
   width: 100%;
-  transform: scale(3) translatex(-50px) translateY(2rem)
+  transform: scale(3) translatex(-50px) translateY(2rem);
+  
 }
 
 .extra-content p{
@@ -381,7 +382,6 @@ td, th{
   margin: 10% auto;
   width: 90%;
   border-radius: 3px;
-  border: 5px solid black;
  }
 
   .nav-option{
@@ -391,8 +391,7 @@ td, th{
   display: flex;
   flex-direction: column;
   }
-  .hero-content{
-  }
+  
   .hero-content h1{
     font-size:3.5rem ;
   }
