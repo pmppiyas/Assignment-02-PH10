@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 
 *{
   margin: 0;
@@ -7,12 +10,13 @@
 :root{
   --font-color:#ffffff;
   --main-color: rgb(17, 17, 17);
+  --secendary:#262626;
   --orange-color:rgb(230, 83, 60);
 }
 body{
    font-family: "Inter", sans-serif;
    max-width: 1440px;
-   background-color:violet;
+   background-color:var(--main-color);
 }
 
 /*shared style start*/
@@ -25,6 +29,11 @@ body{
 
 h1{
   font-size: 2.5rem;
+}
+p{
+  font-size: .9rem;
+  line-height: 1.3rem;
+  opacity: 80%;
 }
 /*shared style end*/
 
@@ -61,34 +70,36 @@ ul li , li a{
 /*Hero section start*/
 
 .hero-section{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  align-items: center;
+  margin-top: -60px;
 }
 
 .hero-content{
+  width: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 500px;
+  justify-content: start;
   row-gap: 30px;
 }
 
 .hero-content h1{
   font-size:4.5rem ;
   color: var(--font-color);
-  line-height:120%;
+  line-height:1.2em;
 }
 
 .hero-content h1 span{
   font-family:"Dancing Script", cursive;
-  font-size: 3rem;
+  font-weight:;
 }
 
 .hero-content p{
   line-height: 1.5rem;
-  opacity: 80%;
+  opacity: 90%;
   color: var(--font-color);
   letter-spacing: 0.03rem;
+  font-size: 1rem;
 }
 .btn-box{
   display: flex;
@@ -143,18 +154,18 @@ font-size: 2rem;
 
 /*your habits section started*/
 .change-habits{
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
   row-gap: 20px;
   color: var(--font-color);
   margin-top: 50px;
 }
 
-.change-habits h1{
+.habit-content h1{
   font-size: 2.5rem;
+}
+.habit-content p{
+  padding: 20px 0;
 }
 .habit-item{
   display: grid;
@@ -172,7 +183,9 @@ font-size: 2rem;
 .habit-item .item h6{
   font-size: 1.5rem;
 }
-
+.habit-item .item p{
+  
+}
 .habit-item .item img{
   width: 200px;
   border-radius: 50%;
@@ -196,7 +209,7 @@ text-align: left;
   overflow: hidden;
   background-position:  center;
   border-radius: 15px;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
 }
 .run-img img{
@@ -263,6 +276,24 @@ text-align: left;
   transform: scale(1.5);
 }
 
+.img-1 img{
+  filter: brightness(2);
+}
+.img-2 img{
+  filter:invert(1);
+}
+.img-3 img{
+  filter: saturate(30);
+}
+.img-4 img{
+  filter: sepia(1);
+}
+.img-5 img{
+  filter: contrast(5);
+}
+.img-6 img{
+  filter: grayscale(1);
+}
 .img-1 > .content{
   position: absolute;
   top: 200px;
@@ -295,10 +326,11 @@ text-align: left;
   position: absolute;
   top: 40px;
   right: 40px;
+  left: 40px;
 }
 
-
 /*Excercises section ended*/
+
 
 /*bmi-calculator ended*/
 
@@ -307,8 +339,11 @@ text-align: left;
   width: 80%;
   border-radius: 3px;
   margin-bottom: 2rem;
+  color: var(--font-color);
 }
-
+.bmi-content h1{
+  padding-bottom: .8rem;
+}
 
 
 .bmi-calculator{
@@ -317,12 +352,12 @@ text-align: left;
   grid-template-columns: 400px 500px;
   justify-content: space-between;
   row-gap: 30px;
-  padding: 30px 7rem;
-   
+  padding: 70px 8rem;
 }
-.for-bg-color{
-  width: 100%;
-  background-color: #262626;
+
+
+.bmi-calculator{
+  background-color: var(--secendary);
 }
 
 .bmi-calculator h2{
@@ -330,7 +365,7 @@ font-size: 2rem;
 }
 
 table, td, th{
-border: 1px solid white;
+border: 1px solid var(--font-color);
 border-collapse: collapse;
 }
 
@@ -372,6 +407,50 @@ td, th{
   margin: 20px 0;
 }
 /*bmi-calculator ended*/
+
+
+/*Our Team Section started*/
+.our-team{
+  color: var(--font-color);
+}
+
+.team-content p{
+  padding: 15px 0;
+}
+
+.team-photo img{
+  width: 300px;
+  height: 270px;
+}
+
+.team-photo{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3 , 300px);
+  justify-content: center;
+  gap: 20px;
+  padding:20px;
+  border-radius: 10px;
+  background-color: var(--secendary);
+}
+
+.photo{
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+}
+
+.trainer-details{
+  position:absolute;
+  bottom: 40px;
+  left: 40px;
+  color: var(--font-color);
+  z-index: 1;
+}
+
+/*Our Team Section ended*/
+
+
 
 
 
@@ -427,12 +506,10 @@ td, th{
 }
 
 .run-extra {
-  flex-direction: column;
-}
-.run-extra {
-  margin-top: 50px;
-  grid-template-columns: 1fr;
-  row-gap: 50px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 30px;
 }
 
 .train-grid{
@@ -472,4 +549,12 @@ td, th{
   flex-direction: column;
   align-items: center;
  }
+.team-photo{
+  grid-template-columns: 1fr;
+  row-gap: 40px;
+}
+.photo{
+  margin: 0 auto;
+}
+
 }
