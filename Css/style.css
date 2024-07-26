@@ -9,8 +9,9 @@
 }
 :root{
   --font-color:#ffffff;
+  --sec-font:#ffffff99;
   --main-color: rgb(17, 17, 17);
-  --secendary:#262626;
+  --sec-main:#262626;
   --orange-color:rgb(230, 83, 60);
 }
 body{
@@ -31,6 +32,7 @@ h1{
   font-size: 2.5rem;
 }
 p{
+  color: var(--sec-font);
   font-size: .9rem;
   line-height: 1.3rem;
   opacity: 80%;
@@ -195,12 +197,14 @@ font-size: 2rem;
 
 /*Run extra miles section started*/
 .run-extra {
-  margin-top: 100px;
+  margin-top: 50px;
   display: grid;
   grid-template-columns: 500px 450px;
   justify-content: space-between;
   align-items: center;
   color: var(--font-color);
+  background-color: var(--sec-main);
+  padding: 40px 25px;
 }
 .run-extra .extra-content{
 text-align: left;
@@ -209,13 +213,12 @@ text-align: left;
   overflow: hidden;
   background-position:  center;
   border-radius: 15px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 .run-img img{
   width: 100%;
   transform: scale(3) translatex(-50px) translateY(2rem);
-  
 }
 
 .extra-content p{
@@ -357,7 +360,7 @@ text-align: left;
 
 
 .bmi-calculator{
-  background-color: var(--secendary);
+  background-color: var(--sec-main);
 }
 
 .bmi-calculator h2{
@@ -370,7 +373,7 @@ border-collapse: collapse;
 }
 
 td , input{
-  color: #ffffff99;
+  color: var(--sec-font);
 }
 
 td, th{
@@ -387,14 +390,23 @@ td, th{
   flex-wrap: wrap;
 }
 
+input::placeholder ,select option{
+  color: var(--sec-font);
+  font-size: .9rem;
+  padding-left: 10px;
+}
+
 .input-box{
-  height: 30px;
+  height: 35px;
   width: 200px;
   flex-grow: 1;
   border-radius: 8px;
   border: none;
   margin-top: 15px;
+  background-color: #525659;
+  color: var(--font-color);
 }
+
 .input-box:nth-child(1){
   margin-right: 10px;
 }
@@ -450,8 +462,36 @@ td, th{
 
 /*Our Team Section ended*/
 
+/*Footer Section started*/
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 3px solid white;
+}
 
+.logo-content p{
+  padding: 20px 0;
+}
 
+.nav-content{
+  display: flex;
+  align-items: flex-end;
+}
+.nav-content table{
+  margin: 0 auto;
+  column-gap: 150px;
+ 
+}
+.nav-content table, tr, th, td{
+  border: none ;
+}
+
+.nav-content thead{
+  color: var(--font-color);
+  text-align: left;
+
+}
+/*Footer section ended*/
 
 
 @media screen and (max-width: 576px)
@@ -474,8 +514,7 @@ td, th{
   .hero-content h1{
     font-size:3.5rem ;
   }
-  .hero-content p{
-  }
+  
 
   .hero-image{
   width: 350px;
@@ -511,14 +550,17 @@ td, th{
   flex-direction: column-reverse;
   row-gap: 30px;
 }
+.run-img{
+  width: 100%;
+}
 
 .train-grid{
   flex-direction: column;
-  row-gap: 15px;
+  row-gap: 40px;
 }
 .row1 , .row2{
   grid-template-columns: 1fr;
-  gap: 15px;
+  gap: 40px;
 }
 .row1 > div, .row2 > div{
   height: 250px;
@@ -557,4 +599,9 @@ td, th{
   margin: 0 auto;
 }
 
+.footer{
+  grid-template-columns: 1fr;
+  justify-content: center;
+  row-gap: 20px;
+}
 }
