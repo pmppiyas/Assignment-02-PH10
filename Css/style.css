@@ -229,12 +229,13 @@ font-size: 2rem;
 .run-extra {
   margin-top: 50px;
   display: grid;
-  grid-template-columns: 500px 450px;
+  grid-template-columns: 450px 350px;
   justify-content: space-between;
   align-items: center;
   color: var(--font-color);
   background-color: var(--sec-main);
   padding: 40px 25px;
+  border-radius: 8px;
 }
 .run-extra .extra-content{
 text-align: left;
@@ -243,12 +244,13 @@ text-align: left;
   overflow: hidden;
   background-position:  center;
   border-radius: 15px;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 .run-img img{
   width: 100%;
   transform: scale(3) translatex(-50px) translateY(2rem);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
 }
 
 .extra-content p{
