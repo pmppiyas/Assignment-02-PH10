@@ -25,6 +25,7 @@ body{
   margin: 3rem auto;
   width: 80%;
   border-radius: 3px;
+  color: var(--font-color);
 }
 
 
@@ -71,6 +72,15 @@ ul li , li a{
   font-weight: 500;
   opacity: 95%;
 }
+
+.gift{
+  border-top: 2px solid var(--font-color);
+  border-bottom: 2px solid var(--font-color);
+  color: var(--orange-color);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
 /*Navbar style end*/
 
 
@@ -485,6 +495,79 @@ input::placeholder ,select option{
 
 /*Our Team Section ended*/
 
+/*my idea showcase section*/
+
+.showcase{
+  margin-bottom: 70px;
+  height: initial;
+}
+.gift-hero{
+  color: var(--font-color);
+  position: relative;
+}
+
+.gift-hero video{
+  width: 100%;
+}
+
+.gift-content{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  text-align: center;
+}
+.gift-content h1{
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.gift-content p{
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  color: var(--orange-color);
+}
+.free-head{
+ margin: 20px 0;
+ text-align: center;
+}
+.free-item-box{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 360px;
+  gap: 30px;
+}
+.free-item{
+  background-color: var(--sec-main);
+  border-radius: 10px;
+  filter: drop-shadow(5px 5px 5px var(--orange-color));
+}
+.free-item img{
+  width: 100%;
+  padding: 5%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.img-content{
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.img-content button{
+padding: 0 15px;
+background: none;
+}
+.img-content button a{
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+/*my idea showcase section*/
+
 /*Footer Section started*/
 .footer-content{
   display: grid;
@@ -493,6 +576,17 @@ input::placeholder ,select option{
 
 .logo-content p{
   padding: 20px 0;
+}
+.box-btn a{
+  margin-right: 20px;
+}
+.box-btn a :hover{
+  color: var(--orange-color);
+  padding: 0 10px;
+}
+.box-btn i{
+  font-size: 2rem;
+  color: var(--font-color);
 }
 
 .nav-content{
@@ -643,6 +737,23 @@ input::placeholder ,select option{
   align-items: center;
   row-gap: 20px;
 }*/
+.product-hero video {
+  position: relative;
+  color: var(--font-color);
+}
+.product-content{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  text-align: center;
+}
+.product-content h1{
+  font-size: 2rem;
+}
 
-
+.free-item-box{
+  grid-template-columns: 1fr;
+  padding: 0 50px;
+  row-gap: 50px;
+}
 }
