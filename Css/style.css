@@ -737,23 +737,22 @@ background: none;
   align-items: center;
   row-gap: 20px;
 }*/
-.product-hero video {
+.gift-hero video {
   position: relative;
   color: var(--font-color);
 }
-.product-content{
+.gift-content{
   position: absolute;
   top: 50%;
   left:50%;
   text-align: center;
 }
-.product-content h1{
+.gift-content h1{
   font-size: 2rem;
 }
 
 .free-item-box{
   grid-template-columns: 1fr;
-  padding: 0 50px;
   row-gap: 50px;
 }
 }
