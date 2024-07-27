@@ -502,12 +502,12 @@ input::placeholder ,select option{
   height: initial;
 }
 .gift-hero{
-  color: var(--font-color);
+  color: var(--orange-color);
   position: relative;
 }
 
 .gift-hero video{
-  width: 100%;
+  width: 100%;;
 }
 
 .gift-content{
@@ -747,8 +747,12 @@ background: none;
   left:50%;
   text-align: center;
 }
+.gift-content p{
+  display: none;
+}
 .gift-content h1{
-  font-size: 2rem;
+  font-size: 1.5rem;
+  color: var(--orange-color);
 }
 
 .free-item-box{
